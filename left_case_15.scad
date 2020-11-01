@@ -19,11 +19,12 @@ module base() {
 
 module left_case() {
     difference() {
-        translate([110, 0, 230.1]) rotate([0, -15, 0]) scale([1, 1, 20]) base();
+        union() {
+            translate([110, 0, 230.1]) rotate([0, -15, 0]) scale([1, 1, 20]) base();
+            translate([154, 0, 66]) rotate([0, -15, 0]) raw_case();
+        }
         bottom_cube();
     }
-
-    translate([154, 0, 66]) rotate([0, -15, 0]) raw_case();
 }
 
 left_case();
