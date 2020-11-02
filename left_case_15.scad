@@ -1,5 +1,5 @@
 module raw_case() {
-    import("left_case.stl");
+    import("dependencies/left_case.stl");
 }
 
 module cutaway_cube() {
